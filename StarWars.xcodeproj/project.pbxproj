@@ -21,6 +21,11 @@
 		D79262E6294803F500F6E4A3 /* WinnerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */; };
 		D79262E8294804D000F6E4A3 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262E7294804D000F6E4A3 /* SettingsModel.swift */; };
 		D79262EC2948627700F6E4A3 /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262EB2948627700F6E4A3 /* UILabel+extension.swift */; };
+		D79262EF29486C5500F6E4A3 /* WinnerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262EE29486C5500F6E4A3 /* WinnerListModel.swift */; };
+		D79262F12948730300F6E4A3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262F02948730300F6E4A3 /* UserModel.swift */; };
+		D79262F32948755200F6E4A3 /* SelecteSpaceshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262F22948755200F6E4A3 /* SelecteSpaceshipViewController.swift */; };
+		D79262F7294875FB00F6E4A3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262F6294875FB00F6E4A3 /* GameViewController.swift */; };
+		D79262F92948770500F6E4A3 /* SpaceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262F82948770500F6E4A3 /* SpaceObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerListViewController.swift; sourceTree = "<group>"; };
 		D79262E7294804D000F6E4A3 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		D79262EB2948627700F6E4A3 /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
+		D79262EE29486C5500F6E4A3 /* WinnerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerListModel.swift; sourceTree = "<group>"; };
+		D79262F02948730300F6E4A3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D79262F22948755200F6E4A3 /* SelecteSpaceshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecteSpaceshipViewController.swift; sourceTree = "<group>"; };
+		D79262F6294875FB00F6E4A3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D79262F82948770500F6E4A3 /* SpaceObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +88,14 @@
 				D717E8C22947951E0063BEF0 /* StartVC */,
 				D79262DD2947FE6000F6E4A3 /* SettingsVC */,
 				D79262E02947FFAB00F6E4A3 /* WinnerListVC */,
+				D79262F42948755E00F6E4A3 /* SelecteSpaceshipVC */,
+				D79262F5294875E300F6E4A3 /* GameVC */,
 				D717E8B129478FDE0063BEF0 /* Main.storyboard */,
 				D717E8B429478FE10063BEF0 /* Assets.xcassets */,
 				D717E8B629478FE10063BEF0 /* LaunchScreen.storyboard */,
 				D717E8B929478FE10063BEF0 /* Info.plist */,
+				D79262F02948730300F6E4A3 /* UserModel.swift */,
+				D79262F82948770500F6E4A3 /* SpaceObject.swift */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -134,9 +148,26 @@
 		D79262E02947FFAB00F6E4A3 /* WinnerListVC */ = {
 			isa = PBXGroup;
 			children = (
+				D79262EE29486C5500F6E4A3 /* WinnerListModel.swift */,
 				D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */,
 			);
 			path = WinnerListVC;
+			sourceTree = "<group>";
+		};
+		D79262F42948755E00F6E4A3 /* SelecteSpaceshipVC */ = {
+			isa = PBXGroup;
+			children = (
+				D79262F22948755200F6E4A3 /* SelecteSpaceshipViewController.swift */,
+			);
+			path = SelecteSpaceshipVC;
+			sourceTree = "<group>";
+		};
+		D79262F5294875E300F6E4A3 /* GameVC */ = {
+			isa = PBXGroup;
+			children = (
+				D79262F6294875FB00F6E4A3 /* GameViewController.swift */,
+			);
+			path = GameVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79262F7294875FB00F6E4A3 /* GameViewController.swift in Sources */,
 				D79262EC2948627700F6E4A3 /* UILabel+extension.swift in Sources */,
 				D79262E8294804D000F6E4A3 /* SettingsModel.swift in Sources */,
+				D79262F92948770500F6E4A3 /* SpaceObject.swift in Sources */,
 				D717E8CA294796D10063BEF0 /* UIView+extension.swift in Sources */,
 				D717E8CC294796DC0063BEF0 /* UserDefaults+extension .swift in Sources */,
 				D717E8AC29478FDE0063BEF0 /* AppDelegate.swift in Sources */,
@@ -220,6 +253,9 @@
 				D717E8C8294796C50063BEF0 /* UIImageView+extension.swift in Sources */,
 				D717E8C4294795490063BEF0 /* StartScreenViewController.swift in Sources */,
 				D79262E4294803D500F6E4A3 /* SettingsViewController.swift in Sources */,
+				D79262EF29486C5500F6E4A3 /* WinnerListModel.swift in Sources */,
+				D79262F32948755200F6E4A3 /* SelecteSpaceshipViewController.swift in Sources */,
+				D79262F12948730300F6E4A3 /* UserModel.swift in Sources */,
 				D79262E6294803F500F6E4A3 /* WinnerListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
