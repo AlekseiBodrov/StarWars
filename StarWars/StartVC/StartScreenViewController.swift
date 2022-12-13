@@ -1,15 +1,19 @@
 import UIKit
 
 final class StartScreenViewController: UIViewController {
+
+    //MARK: - var\let
+    private var isLoadingView = true
+
     //MARK: - IBOutlets
-    @IBOutlet weak var startViewForLabel: UIView!
-    @IBOutlet weak var startLabel: UILabel!
     @IBOutlet weak var backgoundImageView: UIImageView!
     @IBOutlet weak var loadingView: UIView!
-    private var isLoadingView = true
-    @IBOutlet weak var settingImageView: UIImageView!
-    @IBOutlet weak var winnerImageView: UIImageView!
     @IBOutlet weak var contanerForButtons: UIView!
+
+    @IBOutlet weak var winnersButton: UIButton!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var settingButton: UIButton!
+
 
     //MARK: - life cycle funcs
     override func viewDidLoad() {
@@ -23,10 +27,11 @@ final class StartScreenViewController: UIViewController {
     }
 
     //MARK: - flow funcs
-    func configure() {
+    private func configure() {
         view.backgroundColor = .black
         contanerForButtons.backgroundColor = .black
-
+//        buttom.setImage(UIImage(systemName: "gearshape.fill"), for: .normal)
+//        buttom.contentMode = .scaleToFill
         backgoundImageView.image = UIImage(named: "LaunchScreen")
         backgoundImageView.frame = view.bounds
         backgoundImageView.contentMode = .scaleAspectFill
@@ -36,24 +41,30 @@ final class StartScreenViewController: UIViewController {
         loadingView.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         loadingView.layer.borderWidth = 2
 
-        startViewForLabel.rounded(radius: startViewForLabel.frame.size.height / 2)
+//        startViewForLabel.rounded(radius: startViewForLabel.frame.size.height / 2)
+//
+//        startLabel.text = "START"
+//        startLabel.textColor = .black
+//        startLabel.sizeToFit()
+//        startLabel.textAlignment = .center
+//
+//        settingImageView.image = UIImage(systemName: "gearshape.fill")
+//        settingImageView.tintColor = .white
+//        settingImageView.isUserInteractionEnabled = true
+        winnersButton.setTitleColor(UIColor.white, for: .normal)
+        winnersButton.setTitle("", for: .normal)
 
-        startLabel.text = "START"
-        startLabel.textColor = .black
-        startLabel.sizeToFit()
-        startLabel.textAlignment = .center
+        winnersButton.setImage(UIImage(named: "cup"), for: .normal)
 
-        settingImageView.image = UIImage(systemName: "gearshape.fill")
-        settingImageView.tintColor = .white
-        settingImageView.isUserInteractionEnabled = true
-        winnerImageView.image = UIImage(named: "cup")
-        winnerImageView.image?.withTintColor(.white)
-        winnerImageView.isUserInteractionEnabled = true
-
-        let recognizer1 = UITapGestureRecognizer(target: self, action: #selector(settingImagePressed))
-        settingImageView.addGestureRecognizer(recognizer1)
-        let recognizer2 = UITapGestureRecognizer(target: self, action: #selector(winnerImagePressed))
-        winnerImageView.addGestureRecognizer(recognizer2)
+        settingButton.setTitle("", for: .normal)
+        settingButton.tintColor = .white
+        
+        settingButton.setImage(UIImage(systemName: "gearshape.fill"), for: .normal)
+//        winnersButton.image?.withTintColor(.white)
+//        let recognizer1 = UITapGestureRecognizer(target: self, action: #selector(settingImagePressed))
+//        settingImageView.addGestureRecognizer(recognizer1)
+//        let recognizer2 = UITapGestureRecognizer(target: self, action: #selector(winnerImagePressed))
+//        winnerImageView.addGestureRecognizer(recognizer2)
 
 //        startImageView.image = UIImage(named: "startImage")
 //        startImageView.backgroundColor = .white
@@ -63,25 +74,25 @@ final class StartScreenViewController: UIViewController {
 //        let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapDetected))
 //        startImageView.addGestureRecognizer(recognizer)
     }
-    @objc func settingImagePressed() {
-        UIView.animate(withDuration: 0.2) {
-            self.settingImageView.transform = CGAffineTransform.init(scaleX: 0.90, y: 0.90)
-        } completion: { _ in
-            self.settingImageView.transform = .identity
-            guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else { return }
-            self.navigationController?.pushViewController(controller, animated: true)
-        }
-    }
-
-    @objc func winnerImagePressed() {
-        UIView.animate(withDuration: 0.2) {
-            self.winnerImageView.transform = CGAffineTransform.init(scaleX: 0.90, y: 0.90)
-        } completion: { _ in
-            self.winnerImageView.transform = .identity
-            guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "WinnerListViewController") as? WinnerListViewController else { return }
-            self.navigationController?.pushViewController(controller, animated: true)
-        }
-    }
+//    @objc func settingImagePressed() {
+//        UIView.animate(withDuration: 0.2) {
+//            self.settingImageView.transform = CGAffineTransform.init(scaleX: 0.90, y: 0.90)
+//        } completion: { _ in
+//            self.settingImageView.transform = .identity
+//            guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else { return }
+//            self.navigationController?.pushViewController(controller, animated: true)
+//        }
+//    }
+//
+//    @objc func winnerImagePressed() {
+//        UIView.animate(withDuration: 0.2) {
+//            self.winnerImageView.transform = CGAffineTransform.init(scaleX: 0.90, y: 0.90)
+//        } completion: { _ in
+//            self.winnerImageView.transform = .identity
+//            guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "WinnerListViewController") as? WinnerListViewController else { return }
+//            self.navigationController?.pushViewController(controller, animated: true)
+//        }
+//    }
 
     @objc func tapDetected() {
 //

@@ -19,6 +19,8 @@
 		D717E8CC294796DC0063BEF0 /* UserDefaults+extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8CB294796DC0063BEF0 /* UserDefaults+extension .swift */; };
 		D79262E4294803D500F6E4A3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262E3294803D500F6E4A3 /* SettingsViewController.swift */; };
 		D79262E6294803F500F6E4A3 /* WinnerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */; };
+		D79262E8294804D000F6E4A3 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262E7294804D000F6E4A3 /* SettingsModel.swift */; };
+		D79262EC2948627700F6E4A3 /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262EB2948627700F6E4A3 /* UILabel+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D717E8CB294796DC0063BEF0 /* UserDefaults+extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+extension .swift"; sourceTree = "<group>"; };
 		D79262E3294803D500F6E4A3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerListViewController.swift; sourceTree = "<group>"; };
+		D79262E7294804D000F6E4A3 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		D79262EB2948627700F6E4A3 /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				D717E8C7294796C50063BEF0 /* UIImageView+extension.swift */,
 				D717E8C9294796D10063BEF0 /* UIView+extension.swift */,
 				D717E8CB294796DC0063BEF0 /* UserDefaults+extension .swift */,
+				D79262EB2948627700F6E4A3 /* UILabel+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 		D79262DD2947FE6000F6E4A3 /* SettingsVC */ = {
 			isa = PBXGroup;
 			children = (
+				D79262E7294804D000F6E4A3 /* SettingsModel.swift */,
 				D79262E3294803D500F6E4A3 /* SettingsViewController.swift */,
 			);
 			path = SettingsVC;
@@ -205,6 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79262EC2948627700F6E4A3 /* UILabel+extension.swift in Sources */,
+				D79262E8294804D000F6E4A3 /* SettingsModel.swift in Sources */,
 				D717E8CA294796D10063BEF0 /* UIView+extension.swift in Sources */,
 				D717E8CC294796DC0063BEF0 /* UserDefaults+extension .swift in Sources */,
 				D717E8AC29478FDE0063BEF0 /* AppDelegate.swift in Sources */,
