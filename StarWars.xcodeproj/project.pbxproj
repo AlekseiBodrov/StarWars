@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		D717E8AC29478FDE0063BEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8AB29478FDE0063BEF0 /* AppDelegate.swift */; };
 		D717E8AE29478FDE0063BEF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8AD29478FDE0063BEF0 /* SceneDelegate.swift */; };
-		D717E8B029478FDE0063BEF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8AF29478FDE0063BEF0 /* ViewController.swift */; };
 		D717E8B329478FDE0063BEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D717E8B129478FDE0063BEF0 /* Main.storyboard */; };
 		D717E8B529478FE10063BEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D717E8B429478FE10063BEF0 /* Assets.xcassets */; };
 		D717E8B829478FE10063BEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D717E8B629478FE10063BEF0 /* LaunchScreen.storyboard */; };
+		D717E8C1294792710063BEF0 /* starwars.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D717E8C0294792710063BEF0 /* starwars.TTF */; };
+		D717E8C4294795490063BEF0 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8C3294795490063BEF0 /* StartScreenViewController.swift */; };
+		D717E8C8294796C50063BEF0 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8C7294796C50063BEF0 /* UIImageView+extension.swift */; };
+		D717E8CA294796D10063BEF0 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8C9294796D10063BEF0 /* UIView+extension.swift */; };
+		D717E8CC294796DC0063BEF0 /* UserDefaults+extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E8CB294796DC0063BEF0 /* UserDefaults+extension .swift */; };
+		D79262E4294803D500F6E4A3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262E3294803D500F6E4A3 /* SettingsViewController.swift */; };
+		D79262E6294803F500F6E4A3 /* WinnerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D717E8A829478FDE0063BEF0 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D717E8AB29478FDE0063BEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D717E8AD29478FDE0063BEF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D717E8AF29478FDE0063BEF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D717E8B229478FDE0063BEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D717E8B429478FE10063BEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D717E8B729478FE10063BEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D717E8B929478FE10063BEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D717E8C0294792710063BEF0 /* starwars.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = starwars.TTF; sourceTree = "<group>"; };
+		D717E8C3294795490063BEF0 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		D717E8C7294796C50063BEF0 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
+		D717E8C9294796D10063BEF0 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		D717E8CB294796DC0063BEF0 /* UserDefaults+extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+extension .swift"; sourceTree = "<group>"; };
+		D79262E3294803D500F6E4A3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,69 @@
 		D717E8AA29478FDE0063BEF0 /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
+				D717E8C5294796AD0063BEF0 /* Helpers */,
 				D717E8AB29478FDE0063BEF0 /* AppDelegate.swift */,
 				D717E8AD29478FDE0063BEF0 /* SceneDelegate.swift */,
-				D717E8AF29478FDE0063BEF0 /* ViewController.swift */,
+				D717E8C22947951E0063BEF0 /* StartVC */,
+				D79262DD2947FE6000F6E4A3 /* SettingsVC */,
+				D79262E02947FFAB00F6E4A3 /* WinnerListVC */,
 				D717E8B129478FDE0063BEF0 /* Main.storyboard */,
 				D717E8B429478FE10063BEF0 /* Assets.xcassets */,
 				D717E8B629478FE10063BEF0 /* LaunchScreen.storyboard */,
 				D717E8B929478FE10063BEF0 /* Info.plist */,
 			);
 			path = StarWars;
+			sourceTree = "<group>";
+		};
+		D717E8BF294792640063BEF0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D717E8C0294792710063BEF0 /* starwars.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D717E8C22947951E0063BEF0 /* StartVC */ = {
+			isa = PBXGroup;
+			children = (
+				D717E8C3294795490063BEF0 /* StartScreenViewController.swift */,
+			);
+			path = StartVC;
+			sourceTree = "<group>";
+		};
+		D717E8C5294796AD0063BEF0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D717E8C6294796B80063BEF0 /* Extensions */,
+				D717E8BF294792640063BEF0 /* Fonts */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D717E8C6294796B80063BEF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D717E8C7294796C50063BEF0 /* UIImageView+extension.swift */,
+				D717E8C9294796D10063BEF0 /* UIView+extension.swift */,
+				D717E8CB294796DC0063BEF0 /* UserDefaults+extension .swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D79262DD2947FE6000F6E4A3 /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				D79262E3294803D500F6E4A3 /* SettingsViewController.swift */,
+			);
+			path = SettingsVC;
+			sourceTree = "<group>";
+		};
+		D79262E02947FFAB00F6E4A3 /* WinnerListVC */ = {
+			isa = PBXGroup;
+			children = (
+				D79262E5294803F500F6E4A3 /* WinnerListViewController.swift */,
+			);
+			path = WinnerListVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +194,7 @@
 				D717E8B829478FE10063BEF0 /* LaunchScreen.storyboard in Resources */,
 				D717E8B529478FE10063BEF0 /* Assets.xcassets in Resources */,
 				D717E8B329478FDE0063BEF0 /* Main.storyboard in Resources */,
+				D717E8C1294792710063BEF0 /* starwars.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D717E8B029478FDE0063BEF0 /* ViewController.swift in Sources */,
+				D717E8CA294796D10063BEF0 /* UIView+extension.swift in Sources */,
+				D717E8CC294796DC0063BEF0 /* UserDefaults+extension .swift in Sources */,
 				D717E8AC29478FDE0063BEF0 /* AppDelegate.swift in Sources */,
 				D717E8AE29478FDE0063BEF0 /* SceneDelegate.swift in Sources */,
+				D717E8C8294796C50063BEF0 /* UIImageView+extension.swift in Sources */,
+				D717E8C4294795490063BEF0 /* StartScreenViewController.swift in Sources */,
+				D79262E4294803D500F6E4A3 /* SettingsViewController.swift in Sources */,
+				D79262E6294803F500F6E4A3 /* WinnerListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +365,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +393,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
